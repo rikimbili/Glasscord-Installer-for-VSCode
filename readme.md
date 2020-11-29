@@ -27,9 +27,9 @@ glasscord installed without the hassle of manually doing each thing.
 This first version I consider it a complete program; however, there are some caveats and features still to
 be implemented:
 
-- This first version won't install the required CSS file in the .vscode folder to make it work (I'm working
+* This first version won't install the required CSS file in the .vscode folder to make it work (I'm working
   on this feature atm).
-- (#VSCodeExtension)You also need an [extension that lets you inject CSS files into VS Code](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css).
+* # VSCodeExtension You also need an [extension that lets you inject CSS files into VS Code](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css).
 
 For more information about Glasscord [go here](https://github.com/AryToNeX/Glasscord). Thank you AryToNeX for making this amazing piece of software.
 There's also an [official installer](https://github.com/AryToNeX/Glasscordify) available but only works on Linux at the moment.
