@@ -36,7 +36,7 @@ you need it. Make sure you don't COPY the file because glasscord.asar needs to b
 as the executable.
 
 # [===========> Feature Checklist <===========]
-- [X] Add VSCode/Discord directory checks
+- [X] Add VSCode directory checks
 - [ ] Discord support and ability to choose desired program
 - [ ] Separate redundant operations into functions
 - [ ] Create .css file in the vs code user dir if not present
