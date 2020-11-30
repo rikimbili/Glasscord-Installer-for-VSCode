@@ -12,7 +12,7 @@ be implemented:
   on this feature atm).
 * You also need an [extension that lets you inject CSS files into VS Code](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css).
 
-For more information about Glasscord [go here](https://github.com/AryToNeX/Glasscord). Thank you AryToNeX for making this amazing piece of software.
+For more information about Glasscord [go here](https://github.com/AryToNeX/Glasscord). Thank you AryToNeX for making this amazing piece of software. 
 There's also an [official installer](https://github.com/AryToNeX/Glasscordify) available but only works on Linux at the moment.
 
 
