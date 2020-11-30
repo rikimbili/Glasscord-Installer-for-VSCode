@@ -20,13 +20,12 @@ There's also an [official installer](https://github.com/AryToNeX/Glasscordify) a
 - A working 32 or 64 bit Windows computer (no Linux support sadly :( but I might add it in the future).
 - Visual Studio Code or Discord installed(I will add discord support in a future update).
 - A CSS loader/injector. [Refer to the "What's this?" section to learn more]
-- A mouse(computer mouse) and keyboard(to type in the console once I make it work with Discord).
 - A brain or an AI that can interpret this readme file, in case you are the latter, greetings fellow
   non-human.
 
 # [=============> Installation <=============]
 
-1. Download the zip file and extract it anywhere you like
+1. Download the [latest zip file](https://github.com/Rikimbili/glasscord_installer/releases/latest/download/glasscord_installer.zip) and extract it anywhere you like
 2. Open glasscord_installer.exe
 3. Profit
 
@@ -46,8 +45,8 @@ as the executable.
 # [=============> Some Facts <=============]
 
 - I'm currently a Computer Science student on my first year at the University of Central Florida.
-  Since I dont have much experience, this code is far from perfect and if you got something to
-  share, feel free to contribute.
+  Since I dont have much experience, I dont know what else I can do to optimize the code. If you
+  got something to share, feel free to contribute.
 - This small project took me approximately 2-3 full days of work(around 20-24 hours) because I
   had to relearn a ton of stuff and because I work really slow, but it was a satisfying journey
   at the end.
