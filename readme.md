@@ -20,7 +20,6 @@ There's also an [official installer](https://github.com/AryToNeX/Glasscordify) a
 - A working 32 or 64 bit Windows computer (no Linux support sadly :( but I might add it in the future).
 - Visual Studio Code or Discord installed(I will add discord support in a future update).
 - A CSS loader/injector. [Refer to the "What's this?" section to learn more]
-- A mouse(computer mouse) and keyboard(to type in the console once I make it work with Discord).
 - A brain or an AI that can interpret this readme file, in case you are the latter, greetings fellow
   non-human.
 
