@@ -25,7 +25,7 @@ There's also an [official installer](https://github.com/AryToNeX/Glasscordify) a
 
 # [=============> Installation <=============]
 
-1. Download the zip file and extract it anywhere you like
+1. Download the [latest zip file](https://github.com/Rikimbili/glasscord_installer/releases/latest/download/glasscord_installer.zip) and extract it anywhere you like
 2. Open glasscord_installer.exe
 3. Profit
 
