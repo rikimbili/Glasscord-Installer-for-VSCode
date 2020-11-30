@@ -47,6 +47,6 @@ as the executable.
 - I'm currently a Computer Science student on my first year at the University of Central Florida.
   Since I dont have much experience, I dont know what else I can do to optimize the code. If you
   got something to share, feel free to contribute.
-- This small project took me approximately 2-3 full days of work(around 20-24 hours) because I
+- This small project took me approximately 2-3 full days of work(around 20-24 hours just for v1.0) because I
   had to relearn a ton of stuff and because I work really slow, but it was a satisfying journey
   in the end.
