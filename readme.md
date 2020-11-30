@@ -34,7 +34,7 @@ be implemented:
 For more information about Glasscord [go here](https://github.com/AryToNeX/Glasscord). Thank you AryToNeX for making this amazing piece of software.
 There's also an [official installer](https://github.com/AryToNeX/Glasscordify) available but only works on Linux at the moment.
 
-# [==========> Feature Checklist <==========]
+# [===========> Feature Checklist <===========]
 - [X] Add VSCode/Discord directory checks
 - [ ] Discord support and ability to choose desired program
 - [ ] Separate redundant operations into functions
