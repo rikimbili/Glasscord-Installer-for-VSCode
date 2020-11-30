@@ -1,4 +1,4 @@
-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-># Prerequisites# <-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+# [============> Prerequisites <============]
 
 - A working 32 or 64 bit Windows computer (no Linux support sadly :( but I might add it in the future).
 - Visual Studio Code or Discord installed(I will add discord support in a future update).
@@ -7,7 +7,7 @@
 - A brain or an AI that can interpret this readme file, in case you are the latter, greetings fellow
   non-human.
 
-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-># Installation# <-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+# [============> Installation <============]
 
 1. Download the zip file and extract it anywhere you like
 2. Open glasscord_installer.exe
@@ -17,7 +17,7 @@ Optional: Make a shortcut to the file on your desktop so you dont have to be sea
 you need it. Make sure you don't COPY the file because glasscord.asar needs to be in the same location
 as the executable.
 
-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-># What's this?# <-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+# [============> What's this? <============]
 
 This is a Glasscord installer/reinstaller for Visual Studio Code and Discord(not supported at the moment).
 The purpose of this program is to copy/create necessary files whenever you execute it in the case that a
@@ -34,7 +34,7 @@ be implemented:
 For more information about Glasscord [go here](https://github.com/AryToNeX/Glasscord). Thank you AryToNeX for making this amazing piece of software.
 There's also an [official installer](https://github.com/AryToNeX/Glasscordify) available but only works on Linux at the moment.
 
-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-># Feature Checklist #<-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+# [=========> Feature Checklist <=========]
 - [X] Add VSCode/Discord directory checks
 - [ ] Discord support and ability to choose desired program
 - [ ] Separate redundant operations into functions
