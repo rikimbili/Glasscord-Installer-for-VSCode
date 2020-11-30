@@ -17,7 +17,7 @@ Optional: Make a shortcut to the file on your desktop so you dont have to be sea
 you need it. Make sure you don't COPY the file because glasscord.asar needs to be in the same location
 as the executable.
 
-# [============> What's this? <============]
+# [=============> What's this? <=============]
 
 This is a Glasscord installer/reinstaller for Visual Studio Code and Discord(not supported at the moment).
 The purpose of this program is to copy/create necessary files whenever you execute it in the case that a
