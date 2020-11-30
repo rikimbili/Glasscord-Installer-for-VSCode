@@ -49,4 +49,4 @@ as the executable.
   got something to share, feel free to contribute.
 - This small project took me approximately 2-3 full days of work(around 20-24 hours) because I
   had to relearn a ton of stuff and because I work really slow, but it was a satisfying journey
-  at the end.
+  in the end.
