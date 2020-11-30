@@ -26,7 +26,7 @@ There's also an [official installer](https://github.com/AryToNeX/Glasscordify) a
 # [=============> Installation <=============]
 
 1. Download the [latest zip file](https://github.com/Rikimbili/glasscord_installer/releases/latest/download/glasscord_installer.zip) and extract it anywhere you like
-2. Fully close Visual Studio Code and open glasscord_installer.exe; if any error is displayed in the console, retry with administraro rights.
+2. Fully close Visual Studio Code and open glasscord_installer.exe; if any error is displayed, reopen the file with administrator privilieges.
 3. Profit
 
 Optional: Make a shortcut to the file on your desktop so you dont have to be searching for it whenever
