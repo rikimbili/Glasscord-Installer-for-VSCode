@@ -42,7 +42,7 @@ There's also an [official installer](https://github.com/AryToNeX/Glasscordify) a
 - [ ] Linux support... maybe?
 - [ ] Implement a GUI?
 
-# ----> Some Facts <----
+# [=============> Some Facts <=============]
 
 - I'm currently a Computer Science student on my first year at the University of Central Florida. 
   Since I dont have much experience, this code is far from perfect and if you got something to 
