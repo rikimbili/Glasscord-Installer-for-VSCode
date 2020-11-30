@@ -25,7 +25,7 @@ glasscord installed without the hassle of manually doing each thing.
 
 void spinner(short time_secs);
 
-int main(int argc, char *argv[])
+int main()
 {
     FILE *ifp, *ofp, *gcordfp, *o_gcordfp, *file_check;
 
