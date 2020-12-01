@@ -36,10 +36,9 @@ as the executable.
 
 # [===========> Feature Checklist <===========]
 
-- [x] Add VSCode directory checks
+- [ ] Integrate a minimal CLI
 - [ ] Discord support and ability to choose desired program
-- [ ] Separate redundant operations into functions
-- [ ] Create .css file in the vs code user dir if not present
+- [ ] Ability to create .css file in the vs code user dir if not present
 - [ ] Linux support... maybe?
 - [ ] Implement a GUI?
 
