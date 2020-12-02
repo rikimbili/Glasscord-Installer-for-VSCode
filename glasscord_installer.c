@@ -35,8 +35,8 @@ int main()
 
     // ASCII title
     printf("\t  ______ _                                     _    _____                      _ _             \n");
-    printf("\t / _____) |                                   | |  (_____)           _        | | |            \n");
-    printf("\t| /  ___| | ____  ___  ___  ____ ___   ____ _ | |     _   ____   ___| |_  ____| | | ____  ____ \n");
+    printf("\t / _____) |                                   | |  (_   _)           _        | | |            \n");
+    printf("\t| /  ___| | ____  ___  ___  ____ ___   ____ _ | |    | |  ____   ___| |_  ____| | | ____  ____ \n");
     printf("\t| | (___) |/ _  |/___)/___)/ ___) _ \\ / ___) || |    | | |  _ \\ /___)  _)/ _  | | |/ _  )/ ___)\n");
     printf("\t| \\____/| ( ( | |___ |___ ( (__| |_| | |  ( (_| |   _| |_| | | |___ | |_( ( | | | ( (/ /| |    \n");
     printf("\t \\_____/|_|\\_||_(___/(___/ \\____)___/|_|   \\____|  (_____)_| |_(___/ \\___)_||_|_|_|\\____)_|    \n\n");
@@ -163,18 +163,18 @@ int main()
 //  +-+-+-+-+-+-+-+-+-+-+-+-
 void terminate(char *msgStr, int exitCode)
 {
-    if(exitCode != 0 && msgStr != NULL)
+    if(exitCode != 0 && msgStr)
     {
         printf("Error: %s", msgStr);
         spinner(3);
     }
-    else if(exitCode == 0 && msgStr == NULL)
+    else if(exitCode == 0 && msgStr == NULL)/
     {
         printf("Glasscord was successfully installed/reinstalled\n");
     }
     else if(exitCode == 0)
     {
-        printf("%s\n", msgStr);
+        printf("%s\nGlasscord was successfully installed/reinstalled\n", msgStr);
     }
     else
     {
