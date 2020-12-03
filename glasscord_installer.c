@@ -47,9 +47,9 @@ int main(void)
             case 1:
                 if(vscodeInstall())
                 {
-                    printf("\n-> Glasscord for VS Code installed successfully! <-\n");
+                    printf("\n-> Glasscord for VS Code installed successfully!\n");
                 }
-            break;
+                break;
         }
         printf("--------------------------------------------------------------\n");
         printf("Do you wish to install Glasscord to any other program or exit? \n");
@@ -217,7 +217,7 @@ int menu(void)
         else if (counter == 4)
             printf("We can keep doing this forever if you want. Please try again: ");
         else if (counter == 5)
-            printf("There are only two choices, I'm still wondering where you got %d from. Try again: ", user_choice);
+            printf("There are only two choices, I'm wondering where you got %d from. Try again: ", user_choice);
         else if (counter < 10)
             printf("Okay, I'm starting to think your cat sat on your keyboard or something: ");
         else
