@@ -19,7 +19,7 @@
 #define PATH_SIZE 256
 
 void terminate(char *msgStr, int exitCode);
-void spinner(int time_sec);
+void spinner(unsigned int time_sec);
 void printTitle(void);
 
 int main()
@@ -30,7 +30,7 @@ int main()
     const char searchSTR[] = {"\"main\":"}, asarSTR[] = {"  \"main\": \"./glasscord.asar\",\n"}, *dir_check;
 
     printTitle();
-
+    
     // Store current dir containing glasscord.asar to copy it later
     strcpy(gcordPATH, _getcwd(NULL, 0));
     strcat(gcordPATH, "\\resources\\glasscord.asar");
@@ -41,7 +41,6 @@ int main()
     // Check if VS CODE directory exists, else exit
     dir_check = PATH;
     struct stat stat_buff;
-
     if (stat(dir_check, &stat_buff) != 0 && !S_ISDIR(stat_buff.st_mode))
     {
         terminate("Visual Studio code directory could not be found\nPLease check your installation and retry.", 1);
@@ -178,7 +177,7 @@ void terminate(char *msgStr, int exitCode)
 //  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 //  Spinner animation w/ added delay in seconds
 //  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-void spinner(int time_sec)
+void spinner(unsigned int time_sec)
 {
     int counter, i = 0;
     
