@@ -25,7 +25,6 @@ void spinner(unsigned int time_sec);
 
 int main(void)
 {
-    int main_return; 
     /* |===========================|
           Title and Menu system 
     */
@@ -47,7 +46,8 @@ int main(void)
             case 1:
                 if(vscodeInstall())
                 {
-                    printf("\n-> Glasscord for VS Code installed successfully!\n");
+                    printf("--------------------------------------------------------------\n");
+                    printf("-> Glasscord for VS Code installed successfully!\n");
                 }
                 break;
         }
@@ -58,6 +58,34 @@ int main(void)
     return 0;
 }
 
+//  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+//  Prints the home screen's specified module. 0 for title and 1 for option menu
+int menu(void)
+{
+    int user_choice, counter = 0;
+      
+    printf("\n1. Visual Studio Code\n0. Exit\n\n-> ");
+    scanf("%d", &user_choice);
+    while(user_choice != 0 && user_choice != 1)
+    {
+        if (counter == 4)
+            printf("We can keep doing this forever if you want.\n");
+        else if (counter == 5)
+            printf("There are only two choices, I'm wondering where you got %d from.\n", user_choice);
+        else if (counter == 6)
+            printf("Okay, I'm starting to think your cat sat on your keyboard or something.\n");
+        else if(counter >= 10)
+        {
+            printf("Alright, I'm gonna do you a favor and press 0 for you...");
+            spinner(3);
+            exit(0);
+        }
+        printf("-> ");
+        scanf("%d", &user_choice);
+        counter++;
+    }
+    return user_choice;
+}
 
 //  +-+-+-+-+-+-+-+-+-+-+-+--+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 //  Perform all required operations to install glasscord for VS Code, 1 returned if successful
@@ -194,43 +222,49 @@ int vscodeInstall(void)
       |=====================================================================| 
     */
 
+    /*                Start of file operations in user/.vscode dir
+      |=====================================================================| 
+    */
+    // Directory check and change
+    FILE *fptr_css;
+    strcpy(PATH, "C:\\Users\\");
+    strcat(PATH, getenv("USERNAME"));
+    strcat(PATH, "\\.vscode");
+    if (_chdir(PATH) != 0)
+    {
+        terminate("Unable to change directory to .vscode for css file verification.", 1);
+    }
+    fptr_css = fopen("glasscord_theme.css", "r");
+    if (fptr_css == NULL)
+    {
+        terminate("glasscord_theme.css cannot be found in .vscode directory.", -1);
+        fptr_css = fopen("glasscord_theme.css", "w");
+        // code to create file with glasscord integration here
+    }
+    int css_modified = 0;
+    while(!feof(fptr_css))
+    {
+        fgets(currentBUFF, BUFFER_SIZE, fptr_css);
+        if(strstr(currentBUFF, "glasscord") == 0)
+        {
+            css_modified = 1;
+            break;
+        }
+    }
+    if(!css_modified)
+    {
+        printf("The css file doesnt have the required glasscord elements.\n");
+    }
+
+
+
+
    // Change dir back to executable's path
     if (_chdir(executablePATH) != 0)
     {
-        terminate("Unable to return to the executable's directory", 1);
+        terminate("Unable to return to the executable's directory.", 1);
     }
     return 1;
-}
-
-//  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-//  Prints the home screen's specified module. 0 for title and 1 for option menu
-int menu(void)
-{
-    int user_choice, counter = 0;
-      
-    printf("\n1. Visual Studio Code\n0. Exit\n\nYour choice: ");
-    scanf("%d", &user_choice);
-    while(user_choice != 0 && user_choice != 1)
-    {
-        if(counter <= 3)
-            printf("Please enter a correct choice number: ");
-        else if (counter == 4)
-            printf("We can keep doing this forever if you want. Please try again: ");
-        else if (counter == 5)
-            printf("There are only two choices, I'm wondering where you got %d from. Try again: ", user_choice);
-        else if (counter < 10)
-            printf("Okay, I'm starting to think your cat sat on your keyboard or something: ");
-        else
-        {
-            printf("Alright, I'm gonna do you a favor and press 0 for you...");
-            spinner(3);
-            exit(0);
-        }
-        scanf("%d", &user_choice);
-        counter++;
-    }
-    return user_choice; 
-
 }
 
 //  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
