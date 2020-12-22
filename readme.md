@@ -8,7 +8,7 @@ glasscord installed without the hassle of manually doing each thing.
 This first version I consider it a complete program; however, there are some caveats and features still to
 be implemented:
 
-- This first version won't install the required CSS file in the .vscode folder to make it work (I'm working
+- This first version won't check for the required CSS file in the .vscode folder to make it work (I'm working
   on this feature atm).
 - You also need an [extension that lets you inject CSS files into VS Code](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css).
 
@@ -20,8 +20,6 @@ There's also an [official installer](https://github.com/AryToNeX/Glasscordify) a
 - A working 32 or 64 bit Windows computer (no Linux support sadly :( but I might add it in the future).
 - Visual Studio Code or Discord installed(I will add discord support in a future update).
 - A CSS loader/injector. [Refer to the "What's this?" section to learn more]
-- A brain or an AI that can interpret this readme file, in case you are the latter, greetings fellow
-  non-human.
 
 # [=============> Installation <=============]
 
@@ -41,12 +39,3 @@ as the executable.
 - [ ] Ability to create .css file in the vs code user dir if not present
 - [ ] Linux support... maybe?
 - [ ] Implement a GUI?
-
-# [=============> Some Facts <=============]
-
-- I'm currently a Computer Science student on my first year at the University of Central Florida.
-  Since I don't have much experience I dont know what else can be done to optimize the code. If you
-  got something to share, feel free to contribute.
-- This small project took me approximately 2-3 full days of work(around 20-24 hours for v1.0) because I
-  had to relearn a ton of stuff and because I work really slow, but it was a satisfying journey
-  in the end.

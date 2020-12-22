@@ -20,6 +20,7 @@
 
 int vscodeInstall(void);
 int menu(void);
+void updateCSS(FILE *fptr, int preset);
 void terminate(char *msgStr, int exitCode);
 void spinner(unsigned int time_sec);
 
@@ -227,34 +228,40 @@ int vscodeInstall(void)
     */
     // Directory check and change
     FILE *fptr_css;
+    int css_modified = 0, preset;
+
     strcpy(PATH, "C:\\Users\\");
     strcat(PATH, getenv("USERNAME"));
     strcat(PATH, "\\.vscode");
+
     if (_chdir(PATH) != 0)
     {
         terminate("Unable to change directory to .vscode for css file verification.", 1);
     }
-    fptr_css = fopen("glasscord_theme.css", "r");
-    if (fptr_css == NULL)
+    if ((fptr_css = fopen("glasscord_theme.css", "r")) == NULL)
     {
-        terminate("glasscord_theme.css cannot be found in .vscode directory.", -1);
-        fptr_css = fopen("glasscord_theme.css", "w");
-        // code to create file with glasscord integration here
+        terminate("glasscord_theme.css cannot be found in .vscode directory.\nType 0 to create file with default values, or type 1 for my customized css file: ", -1);
+        
+        
     }
-    int css_modified = 0;
-    while(!feof(fptr_css))
-    {
-        fgets(currentBUFF, BUFFER_SIZE, fptr_css);
-        if(strstr(currentBUFF, "glasscord") == 0)
+    else{
+        while(!feof(fptr_css))
         {
-            css_modified = 1;
-            break;
+            fgets(currentBUFF, BUFFER_SIZE, fptr_css);
+            if(strstr(currentBUFF, "glasscord") == 0)
+            {
+                css_modified = 1;
+                break;
+            }
+        }
+        if(!css_modified)
+        {
+            printf("The css file doesnt have the required glasscord elements.\n Type 0 to create file with default values, or type 1 for my customized css file: ");
+            scanf("%d", &preset);
+            createCSS(fptr_css, preset);
         }
     }
-    if(!css_modified)
-    {
-        printf("The css file doesnt have the required glasscord elements.\n");
-    }
+    
 
 
 
@@ -265,6 +272,24 @@ int vscodeInstall(void)
         terminate("Unable to return to the executable's directory.", 1);
     }
     return 1;
+}
+
+//  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+//  create glasscord_theme.css with given preset code. 0 = default, 1 = custom
+void createCSS(FILE *fptr, int preset)
+{
+    fptr = fopen("glasscord_theme.css", "w");
+    switch(preset)
+    {
+        case 1:
+            
+            break;
+
+        default:
+            break;
+            
+            
+    }
 }
 
 //  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
